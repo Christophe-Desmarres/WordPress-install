@@ -1,4 +1,6 @@
-# WordPress-install
+# E03 installation de Wordpress
+fiche récap
+fiche kourou
 
 - ouvrir le terminal à la racine du dossier spé WP
 - telecharger wp : [release wp](https://wordpress.org/download/releases/)
@@ -38,12 +40,12 @@ se placer ds le dossier wp (nommé test ds ce cas)
  <VirtualHost *:80>
     ServerName wordpress.local
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/html/spe_wp/preparation/wordpress
+    DocumentRoot /var/www/html/S09_WordPress/wordpress
     <Directory />
             Options FollowSymLinks
             AllowOverride None
     </Directory>
-    <Directory /var/www/html/spe_wp/preparation/wordpress>
+    <Directory /var/www/html/S09_WordPress/wordpress>
             Options Indexes FollowSymLinks MultiViews
             AllowOverride All
             Order allow,deny
@@ -92,11 +94,12 @@ sudo find . -type d -exec chmod 775 {} +
 - ajouter la ligne ds le fichier vers la fin
 - `define('FS_METHOD', 'direct');`
 
+## installation  WP-CLI
+
 wp en ligne d ecommande
 [wp-cli.org](https://wp-cli.org/fr/)
 Automattic créateur de wp qui maintient le developpement de wpcli
 
-## installation 
 [install](https://wp-cli.org/fr/#installation)
 se mettre à la racine du dossier test
 - `curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`
@@ -110,15 +113,17 @@ se mettre à la racine du dossier test
 [liste des commandes CLI](https://developer.wordpress.org/cli/commands/)
 exemple :
 - `wp plugin list`
-- ``
+- `...`
+
+[listes commandes repo git](https://github.com/maheshwaghmare/wp-cli-commands-cheat-sheet.git)
 
 
-## desinstallation
+## desinstallation wordpress
 - Suppression du dossier wordpress
 - `sudo rm -rf test/`
 - Suprimer la base de donnée ds adminer
 - enlever la ligne test.local
-- `sudo nano etc/hosts`
+- `sudo nano /etc/hosts`
 - ``
 - `cd /etc/apache2/sites-available/`
 - pour disable
