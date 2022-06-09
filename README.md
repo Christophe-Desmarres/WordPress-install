@@ -16,7 +16,8 @@ fiche kourou
 
 création de VHost avec Apache "virtual host"
 "Apache est un serveur web. Son rôle est d'écouter les requêtes émises par les navigateurs (qui demandent des pages web), de chercher la page demandée et de la renvoyer."
-![[Pasted image 20220608111406.png]]
+
+![image](https://github.com/Christophe-Desmarres/WordPress-install/blob/main/resources/Pasted%20image%2020220608111406.png)
 
 se placer ds le dossier wp (nommé test ds ce cas)
 - `cd test/`
