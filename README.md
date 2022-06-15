@@ -1,4 +1,4 @@
-# E03 installation de Wordpress
+# Installation de Wordpress
 fiche récap
 fiche kourou
 
